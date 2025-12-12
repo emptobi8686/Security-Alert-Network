@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shake Setup - ShieldCall</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="app-container flex-col">
+        <div class="nav-header">
+            <a href="triggers.html" class="back-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+            </a>
+            <span style="font-weight: 600; font-size: 18px; margin-left: 8px;">Shake Trigger</span>
+        </div>
+
+        <div class="p-4">
+            <div class="card flex-center" style="justify-content: space-between;">
+                <span>Enable Shake Trigger</span>
+                <!-- Toggle Switch Mock -->
+                <div style="width: 50px; height: 30px; background: #34C759; border-radius: 15px; position: relative;">
+                    <div
+                        style="width: 26px; height: 26px; background: white; border-radius: 50%; position: absolute; top: 2px; right: 2px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 24px;">Sensitivity</h3>
+            <input type="range" class="input-field" style="padding: 0; border: none; background: transparent;"
+                value="50">
+            <div style="display: flex; justify-content: space-between; font-size: 12px; color: var(--text-grey);">
+                <span>Low</span>
+                <span>High</span>
+            </div>
+
+            <div style="margin-top: 40px; text-align: center;">
+                <div
+                    style="background: #E5E5EA; width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center;">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#8E8E93" stroke-width="2">
+                        <path d="M12 2v20M2 12h20" />
+                        <path d="M4 10l-2 2 2 2M20 10l2 2-2 2" />
+                    </svg>
+                </div>
+                <h3>Test Sensitivity</h3>
+                <p>Shake your phone now to test settings.</p>
+                <button class="btn btn-secondary">Test Mode Active</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

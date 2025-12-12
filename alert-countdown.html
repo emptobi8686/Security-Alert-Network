@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Down - ShieldCall</title>
+    <meta http-equiv="refresh" content="5;url=live-alert.html">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .countdown-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 8px solid #FF3B30;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            font-weight: 700;
+            color: #FF3B30;
+            margin: 0 auto 40px;
+            position: relative;
+        }
+
+        .countdown-circle::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border-radius: 50%;
+            border: 8px solid rgba(255, 59, 48, 0.2);
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
+
+        @keyframes ping {
+
+            75%,
+            100% {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container p-4 flex-col flex-center text-center">
+
+        <div style="margin-top: 20vh;">
+            <p style="font-size: 18px; font-weight: 600; margin-bottom: 40px;">Sending Alert in...</p>
+
+            <div class="countdown-circle">5</div>
+
+            <p>Your location will be shared with <strong>2 contacts</strong>.</p>
+        </div>
+
+        <div class="mt-auto" style="width: 100%;">
+            <a href="home.html" class="btn btn-secondary" style="border-color: #8E8E93; color: #8E8E93;">Cancel
+                Alert</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Pattern - ShieldCall</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .tap-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            max-width: 300px;
+            margin: 32px auto;
+        }
+
+        .tap-dot {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #E5E5EA;
+            margin: 0 auto;
+        }
+
+        .tap-dot:hover,
+        .tap-dot:active {
+            background: #FF3B30;
+            border-color: #FF3B30;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container flex-col">
+        <div class="nav-header">
+            <a href="triggers.html" class="back-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg></a>
+            <span style="font-weight: 600; font-size: 18px; margin-left: 8px;">Tap Pattern</span>
+        </div>
+        <div class="p-4 text-center">
+            <p>Create a secret tap pattern to trigger the alarm quietly.</p>
+
+            <div class="tap-grid">
+                <div class="tap-dot"></div>
+                <div class="tap-dot"></div>
+                <div class="tap-dot"></div>
+                <div class="tap-dot"></div>
+                <div class="tap-dot"></div>
+                <div class="tap-dot"></div>
+                <div class="tap-dot"></div>
+                <div class="tap-dot"></div>
+                <div class="tap-dot"></div>
+            </div>
+
+            <button class="btn btn-primary mb-4">Save Pattern</button>
+            <button class="btn btn-text">Reset</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Permission - ShieldCall</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="app-container p-4 flex-col flex-center text-center">
+
+        <div class="fade-in" style="max-width: 320px; margin-top: 10vh;">
+            <div
+                style="background: #FFF0F0; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FF3B30" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <h2>Enable Location</h2>
+            <p>ShieldCall needs your location to send help to your exact position during an emergency.</p>
+        </div>
+
+        <div class="mt-auto" style="width: 100%;">
+            <!-- Simulating system permission dialog on click by just going to next step -->
+            <a href="onboarding-motion.html" class="btn btn-primary mb-2">Allow Location</a>
+            <a href="onboarding-motion.html" class="btn btn-text">Skip for now</a>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <span
+                style="height: 4px; width: 8px; background: #FF3B30; display: inline-block; border-radius: 2px;"></span>
+            <span
+                style="height: 4px; width: 8px; background: #E5E5EA; display: inline-block; border-radius: 2px; margin: 0 4px;"></span>
+            <span
+                style="height: 4px; width: 8px; background: #E5E5EA; display: inline-block; border-radius: 2px;"></span>
+        </div>
+
+    </div>
+</body>
+
+</html>

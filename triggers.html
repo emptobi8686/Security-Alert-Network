@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triggers - ShieldCall</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="app-container flex-col">
+
+        <div class="nav-header">
+            <a href="home.html" class="back-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+            <span style="font-weight: 600; font-size: 18px; margin-left: 8px;">Trigger Alert</span>
+        </div>
+
+        <div class="p-4" style="flex: 1;">
+            <p class="mb-4">Select a method to trigger an SOS alert.</p>
+
+            <a href="alert-countdown.html" class="card flex-center mb-4"
+                style="background: #FFF0F0; border: 1px solid #FF3B30; text-decoration: none; padding: 24px;">
+                <div
+                    style="width: 48px; height: 48px; background: #FF3B30; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 16px;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="12" cy="12" r="4" />
+                    </svg>
+                </div>
+                <div style="flex: 1;">
+                    <h3 style="margin: 0; font-size: 18px; color: #FF3B30;">Tap SOS Button</h3>
+                    <span style="font-size: 14px; color: #D32F2F;">Immediate manual alert</span>
+                </div>
+                <div
+                    style="background: white; border-radius: 12px; padding: 4px 12px; font-size: 12px; color: #FF3B30; font-weight: 600;">
+                    USE</div>
+            </a>
+
+            <h3 style="font-size: 16px; margin: 24px 0 16px 0;">Configure Auto-Triggers</h3>
+
+            <a href="setup-shake.html" class="card flex-center mb-2" style="text-decoration: none; color: inherit;">
+                <div style="background: #F2F2F7; padding: 12px; border-radius: 12px; margin-right: 16px;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v20M2 12h20" />
+                        <path d="M4 10l-2 2 2 2M20 10l2 2-2 2" />
+                    </svg>
+                </div>
+                <div style="flex: 1;">
+                    <h4 style="margin: 0; font-size: 16px;">Shake Trigger</h4>
+                    <span style="font-size: 13px; color: var(--text-grey);">Shake phone 3 times</span>
+                </div>
+                <div style="color: #4CAF50; font-size: 14px; font-weight: 500;">ON</div>
+                <svg width="20" height="20" style="margin-left: 8px; color: #C7C7CC;" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6" />
+                </svg>
+            </a>
+
+            <a href="setup-power.html" class="card flex-center mb-2" style="text-decoration: none; color: inherit;">
+                <div style="background: #F2F2F7; padding: 12px; border-radius: 12px; margin-right: 16px;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
+                        <line x1="12" y1="2" x2="12" y2="12"></line>
+                    </svg>
+                </div>
+                <div style="flex: 1;">
+                    <h4 style="margin: 0; font-size: 16px;">Power Button</h4>
+                    <span style="font-size: 13px; color: var(--text-grey);">Press power 3 times</span>
+                </div>
+                <div style="color: #4CAF50; font-size: 14px; font-weight: 500;">ON</div>
+                <svg width="20" height="20" style="margin-left: 8px; color: #C7C7CC;" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6" />
+                </svg>
+            </a>
+
+            <a href="setup-tap.html" class="card flex-center mb-2" style="text-decoration: none; color: inherit;">
+                <div style="background: #F2F2F7; padding: 12px; border-radius: 12px; margin-right: 16px;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="5" r="1"></circle>
+                        <circle cx="12" cy="19" r="1"></circle>
+                        <circle cx="5" cy="12" r="1"></circle>
+                        <circle cx="19" cy="12" r="1"></circle>
+                    </svg>
+                </div>
+                <div style="flex: 1;">
+                    <h4 style="margin: 0; font-size: 16px;">Tap Pattern</h4>
+                    <span style="font-size: 13px; color: var(--text-grey);">Tap pattern on screen</span>
+                </div>
+                <div style="color: var(--text-grey); font-size: 14px; font-weight: 500;">OFF</div>
+                <svg width="20" height="20" style="margin-left: 8px; color: #C7C7CC;" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6" />
+                </svg>
+            </a>
+
+            <a href="setup-button.html" class="card flex-center" style="text-decoration: none; color: inherit;">
+                <div style="background: #F2F2F7; padding: 12px; border-radius: 12px; margin-right: 16px;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    </svg>
+                </div>
+                <div style="flex: 1;">
+                    <h4 style="margin: 0; font-size: 16px;">Button Style</h4>
+                    <span style="font-size: 13px; color: var(--text-grey);">Customize Emergency Btn</span>
+                </div>
+                <svg width="20" height="20" style="margin-left: 8px; color: #C7C7CC;" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6" />
+                </svg>
+            </a>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Details - ShieldCall</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="app-container flex-col">
+        <div class="nav-header">
+            <a href="feed.html" class="back-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg></a>
+            <span style="font-weight: 600; font-size: 18px; margin-left: 8px;">Alert Details</span>
+        </div>
+
+        <div
+            style="height: 30vh; background: #e5e5f7; position: relative; background-image:  linear-gradient(#d5d5d5 1px, transparent 1px), linear-gradient(90deg, #d5d5d5 1px, transparent 1px); background-size: 40px 40px;">
+            <div class="pin"
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -100%); width: 32px; height: 32px;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#FF3B30" stroke="white" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" fill="white" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="p-4"
+            style="background: white; border-radius: 20px 20px 0 0; margin-top: -20px; box-shadow: 0 -4px 16px rgba(0,0,0,0.05); flex: 1;">
+            <div style="width: 40px; height: 4px; background: #E5E5EA; border-radius: 2px; margin: 0 auto 16px;"></div>
+
+            <h2 class="mb-2">Suspicious Activity</h2>
+            <p style="font-size: 14px; margin-bottom: 4px;">Main St & 2nd Ave</p>
+            <p style="font-size: 14px; color: var(--text-grey);">2 minutes ago</p>
+
+            <button class="btn btn-primary mb-4" style="height: 48px;">I can help</button>
+            <button class="btn btn-secondary" style="height: 48px; border-color: #E5E5EA; color: var(--text-dark);">Mark
+                as Safe</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS LIVE - ShieldCall</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .alert-pulse {
+            width: 100%;
+            height: 100vh;
+            background: #FF3B30;
+            position: absolute;
+            opacity: 0.1;
+            z-index: 0;
+            animation: bgPulse 1s infinite alternate;
+        }
+
+        @keyframes bgPulse {
+            from {
+                opacity: 0.05;
+            }
+
+            to {
+                opacity: 0.2;
+            }
+        }
+
+        .live-map {
+            background-color: #e5e5f7;
+            height: 40vh;
+            width: 100%;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container flex-col" style="background: #fff;">
+        <div class="alert-pulse"></div>
+
+        <div class="p-4" style="z-index: 10; display: flex; flex-direction: column; height: 100%;">
+
+            <div style="text-align: center; margin-bottom: 24px;">
+                <h1 style="color: #FF3B30; margin-bottom: 8px;">SOS ALERT SENT</h1>
+                <p style="margin: 0;">Sharing live location with contacts & authorities.</p>
+            </div>
+
+            <div class="live-map">
+                <!-- Map Mock -->
+                <div
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 20px; height: 20px; background: #FF3B30; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 10px rgba(255, 59, 48, 0.3);">
+                </div>
+            </div>
+
+            <div class="card mb-4" style="border: 1px solid #FF3B30;">
+                <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                    <div
+                        style="width: 10px; height: 10px; background: #FF3B30; border-radius: 50%; margin-right: 8px; animation: blink 1s infinite;">
+                    </div>
+                    <span style="font-weight: 600; font-size: 14px;">Broadcasting Location...</span>
+                </div>
+                <div style="font-size: 12px; color: var(--text-grey);">Accuracy: 5 meters • Updated: Just now</div>
+            </div>
+
+            <a href="offline-fallback.html" class="btn btn-text mb-2">Simulate Offline Mode</a>
+
+            <div class="mt-auto">
+                <button class="btn btn-primary" style="background: #007AFF; margin-bottom: 12px;">Call 911</button>
+                <a href="home.html" class="btn btn-secondary"
+                    style="border-color: #FF3B30; color: #FF3B30; background: white;">I am Safe (Stop Alert)</a>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
